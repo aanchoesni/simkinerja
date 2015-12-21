@@ -1,0 +1,1 @@
+C:\xampp\htdocs\simkinerja\app/views/tujabs/show.blade.php

@@ -1,0 +1,25 @@
+@extends('layouts.master')
+
+@section('title')
+	{{ $title }}
+@stop
+
+@section('breadcrumb')
+	<li><a href="dashboard"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+    <li><a href="{{ route('admin.jabatan.index') }}">Jabatan</a></li>
+    <li class="active">@yield('title')</li>
+@stop
+
+@section('content')
+<div class="row">
+    <div class="col-lg-6">
+    	<div class="box box-info">	
+        	<div class="box-body">
+        	{{ Form::open(array('url' => route('admin.jabatan.store'), 'method' => 'post')) }}
+        		@include('jabatans._form')
+        	{{ Form::close() }}
+        	</div>
+        </div>
+    </div>
+</div>
+@stop

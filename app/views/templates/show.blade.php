@@ -1,0 +1,1 @@
+D:\xampp\htdocs\simkinerja\app/views/templates/show.blade.php
